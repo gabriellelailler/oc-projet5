@@ -289,6 +289,11 @@ input[type="submit"] {
 }
 #modal-picture{
 	max-width: 600px;
+	max-height: 800px;
+}
+#modal-picture img{
+	max-width: 600px;
+	max-height: 600px;
 }
 
 .fa-chevron-left,
@@ -296,7 +301,7 @@ input[type="submit"] {
 	position: absolute;
 	top: 50%;
 	font-size: 40px;
-	color: black;
+	color: white;
 	cursor: pointer;
 }
 .fa-chevron-left {
