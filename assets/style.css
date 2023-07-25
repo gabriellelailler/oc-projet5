@@ -303,13 +303,14 @@ input[type="submit"] {
 	font-size: 40px;
 	color: white;
 	cursor: pointer;
+	opacity: 0.4;
 }
 .fa-chevron-left {
-	left: 5%;
+	left: 8%;
 }
 
 .fa-chevron-right {
-	right: 5%;
+	right: 8%;
 }
 
 /* Add CSS to center the modal content vertically */
