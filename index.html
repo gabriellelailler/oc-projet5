@@ -13,6 +13,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script src="https://kit.fontawesome.com/56771ac7cc.js" crossorigin="anonymous"></script>
 	
 	<title>Nina Carducci</title>
 </head>
@@ -73,19 +74,26 @@
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
-<div id="gallery">
+<div>
 	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
-		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/concert-foule_xymk8o.webp" alt="concert" loading="lazy">
-			<img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/entreprise-homme_idlyb5.webp" alt="homme en costume" loading="lazy">
-			<img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/entreprise-femmes_dtbyat.webp" alt="femmes en réunion" loading="lazy">
-			<img data-gallery-tag="Mariages" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/mariage-mains_fqsrlx.webp" alt="mains de mariés" loading="lazy">
-			<img data-gallery-tag="Portrait" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281949/portrait-homme_xkulr7.webp" alt="portrait d'un homme fermant les yeux" loading="lazy">
-			<img data-gallery-tag="Mariages" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/mariage-maries_qrt7w2.webp" alt="mariés souriants" loading="lazy">
-			<img data-gallery-tag="Portrait" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/portrait-femme_cwvkyq.webp" alt="portrait de femme à lunettes" loading="lazy">
-			<img data-gallery-tag="Concert" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/concert-chanteur_qzdgnh.webp" alt="chanteur en concert" loading="lazy">
-			<img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690282101/entreprise-femme_ac18c0.webp" alt="femme souriant au travail" loading="lazy">
+	<div id="gallery">
+		<div class="gallery-tags">
+			<button id="js-tag-button-0">Tous</button>
+			<button id="js-tag-button-1">Concerts</button>
+			<button id="js-tag-button-2">Entreprises</button>
+			<button id="js-tag-button-3">Mariages</button>
+			<button id="js-tag-button-4">Portraits</button>
+		</div>
+		<div class="gallery-item-container">
+			<img class="gallery-item img-fluid js-gallery-item-tag-1" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/concert-foule_xymk8o.webp" alt="concert" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-2" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/entreprise-homme_idlyb5.webp" alt="homme en costume" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-2" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/entreprise-femmes_dtbyat.webp" alt="femmes en réunion" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-3" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/mariage-mains_fqsrlx.webp" alt="mains de mariés" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-4" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281949/portrait-homme_xkulr7.webp" alt="portrait d'un homme fermant les yeux" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-3" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/mariage-maries_qrt7w2.webp" alt="mariés souriants" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-4" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/portrait-femme_cwvkyq.webp" alt="portrait de femme à lunettes" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-1" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690281940/concert-chanteur_qzdgnh.webp" alt="chanteur en concert" loading="lazy">
+			<img class="gallery-item img-fluid js-gallery-item-tag-2" src="https://res.cloudinary.com/dyo7emgdt/image/upload/v1690282101/entreprise-femme_ac18c0.webp" alt="femme souriant au travail" loading="lazy">
 		</div>
 	</div>
 	<div class="quote">
@@ -161,6 +169,13 @@
 		</div>
 	</div>
 </div>
+<aside id="modal" style="display: none;">
+	<div class="modal-wrapper">
+		<i class="fas fa-chevron-left"></i>
+		<div id="modal-picture"></div>
+		<i class="fas fa-chevron-right"></i>
+	</div>
+</aside>
 </body>
 </html>
 
