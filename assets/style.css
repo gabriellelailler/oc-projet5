@@ -65,7 +65,8 @@ body {
 	margin: 0 20px;
 	z-index: 0;
 }
-.picture img {
+.picture img,
+img {
 	width: 100%;
 }
 #about-me {
@@ -235,6 +236,7 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+
 
 @media all and (max-width: 1180px) {
 	.picture {
