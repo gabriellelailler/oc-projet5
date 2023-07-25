@@ -60,16 +60,13 @@ body {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
-
 }
 #about-me {
 	flex: 2
@@ -118,6 +115,8 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	max-width: 440px;
+	max-height: 440px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -252,6 +251,10 @@ input[type="submit"] {
 	}
 	#about-me h6, #about-me p {
 		width: 100%;
+	}
+	.gallery-item {
+		width: 100%;
+		height: 100%;
 	}
 }
 
