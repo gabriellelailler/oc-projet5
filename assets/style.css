@@ -320,12 +320,12 @@ input[type="submit"] {
 
 .picture.left img{
 	width: 560px;
-	height: auto;
+	height: 560px;
 	object-fit: cover;
 }
 .picture.right img {
 	width: 418px;
-	height: auto;
+	height: 418px;
 	object-fit: cover;
 }
 
@@ -356,9 +356,11 @@ input[type="submit"] {
 	}
 	.picture.left img{
 		width: 390px;
+		height: 390px;
 	}
 	.picture.right img {
 		width: 380px;
+		height: 380px;
 	}
 }
 
@@ -467,13 +469,15 @@ input[type="submit"] {
 	}
 	.picture.left img{
 		width: 285px;
+		height: 285px;
 	}
 	.picture.right img {
 		width: 270px;
+		height: 270px;
 	}
 }
 
-/* ajout dimentsions */
+/* ajout dimensions */
 .carousel-item img {
 	width: 100%;
 	height: auto;
@@ -481,18 +485,3 @@ input[type="submit"] {
 	max-height: 1080px;
   }
   
-.picture.left img,
-.picture.right img {
-	width: 100%;
-	height: auto;
-	max-width: 374px;
-	max-height: 329px;
-	object-fit: cover;
-  }
-
-  .gallery-item {
-	width: 100%;
-	height: auto;
-	max-width: 800px;
-	max-height: 800px;
-  }
