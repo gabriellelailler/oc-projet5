@@ -336,11 +336,17 @@ input[type="submit"] {
 }
 
 .carousel-item img {
+	width: 1920px;
+	height: 888px;
+	object-fit: cover;
+}
+
+@media (max-width: 1920px) {
+.carousel-item img {
 	width: 100%;
 	height: auto;
-	max-width: 1920px;
-	max-height: 1080px;
-  }
+}
+}
 
 @media all and (max-width: 1180px) {
 	.picture {
