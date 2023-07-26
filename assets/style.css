@@ -349,6 +349,16 @@ input[type="submit"] {
 	object-fit: cover;
 }
 
+footer{
+	padding: 50px 100px;
+	display:flex;
+	flex-direction: column;
+}
+
+footer span{
+	margin-bottom: 10px;
+}
+
 @media (max-width: 1920px) {
 .carousel-item img {
 	width: 100%;
