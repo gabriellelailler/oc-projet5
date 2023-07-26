@@ -20,7 +20,9 @@ body {
 	padding-block: 30px;
 	align-items: center;
 }
-
+h2{
+	font-size: 30px;
+}
 .top-header .name {
 	font-size: 26px;
 }
@@ -49,7 +51,7 @@ body {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
+	padding-inline: 5vw;
 	padding-block: 100px;
 	position: relative;
 }
@@ -318,14 +320,10 @@ input[type="submit"] {
 	right: 8%;
 }
 
-.picture.left img{
+.picture.left img,
+.picture.right img{
 	width: 560px;
 	height: 560px;
-	object-fit: cover;
-}
-.picture.right img {
-	width: 418px;
-	height: 418px;
 	object-fit: cover;
 }
 
@@ -346,6 +344,11 @@ input[type="submit"] {
 	width: 100%;
 	height: auto;
 }
+.picture.left img,
+.picture.right img{
+	width: 100%;
+	height: auto;
+}
 }
 
 @media all and (max-width: 1180px) {
@@ -363,16 +366,8 @@ input[type="submit"] {
 		width: 100%;
 	}
 	#gallery{
-		margin: 0px 109.5px;
+		margin: 0px 3%;
 		padding: 16px 12px;
-	}
-	.picture.left img{
-		width: 390px;
-		height: 390px;
-	}
-	.picture.right img {
-		width: 380px;
-		height: 380px;
 	}
 }
 
@@ -476,17 +471,13 @@ input[type="submit"] {
 		
 	}
 	#gallery{
-		margin: 0px 54.5px;
+		margin: 0px 2%;
 		padding: 16px 12px;
 	}
-	.picture.left img{
-		width: 285px;
-		height: 285px;
-	}
-	.picture.right img {
-		width: 270px;
-		height: 270px;
+}
+@media all and (max-width: 500px) {
+	.gallery-item-container{
+		grid-template-columns: repeat(1, 1fr);
+
 	}
 }
-
-  
