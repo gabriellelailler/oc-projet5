@@ -458,14 +458,15 @@ input[type="submit"] {
 	max-height: 1080px;
   }
   
-.picture.left img {
+.picture.left img,
+.picture.right img {
 	width: 100%;
 	height: auto;
 	max-width: 374px;
 	max-height: 329px;
+	object-fit: cover;
   }
-  
-  /* Add explicit width and height for gallery images */
+
   .gallery-item {
 	width: 100%;
 	height: auto;
