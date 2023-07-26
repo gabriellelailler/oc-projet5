@@ -318,6 +318,17 @@ input[type="submit"] {
 	right: 8%;
 }
 
+.picture.left img{
+	width: 560px;
+	height: auto;
+	object-fit: cover;
+}
+.picture.right img {
+	width: 418px;
+	height: auto;
+	object-fit: cover;
+}
+
 /* Add CSS to center the modal content vertically */
 .picture.right, .picture.left {
 	display: flex;
@@ -342,6 +353,12 @@ input[type="submit"] {
 	#gallery{
 		margin: 0px 109.5px;
 		padding: 16px 12px;
+	}
+	.picture.left img{
+		width: 390px;
+	}
+	.picture.right img {
+		width: 380px;
 	}
 }
 
@@ -447,6 +464,12 @@ input[type="submit"] {
 	#gallery{
 		margin: 0px 54.5px;
 		padding: 16px 12px;
+	}
+	.picture.left img{
+		width: 285px;
+	}
+	.picture.right img {
+		width: 270px;
 	}
 }
 
