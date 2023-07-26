@@ -329,12 +329,18 @@ input[type="submit"] {
 	object-fit: cover;
 }
 
-/* Add CSS to center the modal content vertically */
 .picture.right, .picture.left {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	max-width: 1920px;
+	max-height: 1080px;
+  }
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -477,11 +483,4 @@ input[type="submit"] {
 	}
 }
 
-/* ajout dimensions */
-.carousel-item img {
-	width: 100%;
-	height: auto;
-	max-width: 1920px;
-	max-height: 1080px;
-  }
   
